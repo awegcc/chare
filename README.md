@@ -1,5 +1,3 @@
-# chare
-share, chare, misc, ect, configuration
 ## Centos remove unused packages
 ```
 yum remove empathy cheese gnome-dictionary gnome-contacts\
@@ -24,4 +22,16 @@ error: Failed dependencies:
    
 yum install epel-release
 yum install qt5-qtwebkit qt5-qtx11extras qt5-qtquickcontrols
+```
+## hiwifi configuration
+```
+HiWifi-4-pro
+system type : Mediatek MT7621 ver:1, eco:3
+machine     : HiWiFi Wireless HC5962 Board
+cpu model   : MIPS 1004Kc V2.15
+memory      : Mem-256MB
+HC5962 - 1.4.8.20462s    MAC : D4EE0755F0FE
+
+https://openwrt.io/
+https://www.binss.me/blog/install-openwrt-on-hiwifi-router/
 ```
