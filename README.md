@@ -4,9 +4,9 @@ share, chare, misc, ect, configuration
 ```
 yum remove empathy cheese gnome-dictionary gnome-contacts\
     gnome-weather totem orca system-config-printer gnome-tweak-tool\
-	pulseaudio-utils alsa-plugins-pulseaudio gnome-video-effects\
-	alsa-firmware alsa-utils
-	system-config-printer-udev system-config-printer-libs gutenprint firewalld 
+    pulseaudio-utils alsa-plugins-pulseaudio gnome-video-effects\
+    alsa-firmware alsa-utils\
+    system-config-printer-udev system-config-printer-libs gutenprint firewalld 
 ```
 
 ## Centos install teamviewer
