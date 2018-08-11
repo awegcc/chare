@@ -32,11 +32,15 @@ cpu model   : MIPS 1004Kc V2.15
 memory      : Mem-256MB
 HC5962 - 1.4.8.20462s    MAC : D4EE0755F0FE
 ```
-https://openwrt.io/
+https://openwrt.io
+
 https://www.binss.me/blog/install-openwrt-on-hiwifi-router/
 
 ## SS
 www.jsss.pro
+
 www.jsss.tech
+
 https://www.v2ray.pro
+
 
