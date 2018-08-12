@@ -40,7 +40,7 @@ https://www.binss.me/blog/install-openwrt-on-hiwifi-router/
 www.jsss.pro
 
 www.jsss.tech
-
+https://free-ss.tk
 https://www.v2ray.pro
 
 ## credential
