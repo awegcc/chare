@@ -43,4 +43,12 @@ www.jsss.tech
 
 https://www.v2ray.pro
 
-
+## credential
+```
+61.165.3.3
+101.93.5.24
+116.227.229.33
+GazkoMSQI3pWT2runYFocxqMSZbOpeUVCDjyRDbIfJA=
+3I+meijbA0FEDUkpw7/GejpfgJxNh7pjS6jkkLz945M=
+ingvjbG23YZgSJr+Z/0rUeCZAu0P21aCRTQfDwEpI/A=
+```
