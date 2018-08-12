@@ -42,6 +42,11 @@ https://free-ss.tk
 https://www.v2ray.pro  
 https://prc-word.com  
 
+## openwrt
+http://openwrt-dist.sourceforge.net  
+https://cokebar.info/archives/962  
+http://mike163.coding.me/2015/08/12/openwrt-shadowsocks-chinadns-setup/  
+
 ## credential
 ```
 61.165.3.3
