@@ -41,6 +41,8 @@ www.jsss.tech
 https://free-ss.tk  
 https://www.v2ray.pro  
 https://prc-word.com  
+https://icymind.com/learn-from-gfw  
+https://www.hurray0.com/menu/27/  
 
 ## openwrt
 http://openwrt-dist.sourceforge.net  
