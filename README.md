@@ -39,6 +39,7 @@ https://www.binss.me/blog/install-openwrt-on-hiwifi-router/
 www.jsss.pro  
 www.jsss.tech  
 https://free-ss.tk  
+https://free-ss.site  
 https://www.v2ray.pro  
 https://prc-word.com  
 https://icymind.com/learn-from-gfw  
