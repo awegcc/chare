@@ -1,3 +1,7 @@
+## nodejs repo
+https://rpm.nodesource.com/pub_8.x/el/7/x86_64/  
+
+
 ## Centos remove unused packages
 ```
 yum remove empathy cheese gnome-dictionary gnome-contacts\
