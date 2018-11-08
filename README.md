@@ -1,4 +1,4 @@
-## nodejs repo
+## nodejs rpm packages repo
 https://rpm.nodesource.com/pub_8.x/el/7/x86_64/  
 
 
