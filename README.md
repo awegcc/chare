@@ -54,12 +54,3 @@ http://openwrt-dist.sourceforge.net
 https://cokebar.info/archives/962  
 http://mike163.coding.me/2015/08/12/openwrt-shadowsocks-chinadns-setup/  
 
-## credential
-```
-61.165.3.3
-101.93.5.24
-116.227.229.33
-GazkoMSQI3pWT2runYFocxqMSZbOpeUVCDjyRDbIfJA=
-3I+meijbA0FEDUkpw7/GejpfgJxNh7pjS6jkkLz945M=
-ingvjbG23YZgSJr+Z/0rUeCZAu0P21aCRTQfDwEpI/A=
-```
