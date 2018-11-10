@@ -49,6 +49,11 @@ https://prc-word.com
 https://icymind.com/learn-from-gfw  
 https://www.hurray0.com/menu/27/  
 
+## git (go get)
+git config --global http.proxy http://127.0.0.1:1080  
+git config --global https.proxy https://127.0.0.1:1080  
+
+
 ## openwrt
 http://openwrt-dist.sourceforge.net  
 https://cokebar.info/archives/962  
