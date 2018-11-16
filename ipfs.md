@@ -32,3 +32,22 @@
         "ProtocolVersion": "ipfs/0.1.0"
 }
 ```
+
+### 3. Windows 10
+```
+{
+        "ID": "QmW9Y3rm6hUQ1W4KDmATaVQsJjqqWkZjAMWodqe1baDMvo",
+        "PublicKey": "CAASpgIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQD2vl1pF3wqpPWX1PuBN37mwVMbD8JJ6fSt1nsrR9bTiYPwq4+qQY0cjjm01yU01jmced3P7wEHBV80kiCZXnn8aIrXEMk1fww1aq5gZf2H1ttqUwWxVKzpsmEC9qBB9/rybxge3QnO+5ajNuxAd+NDWGWdpFFVpgL+78dQY2i2p0YwMw1Bwr1gDXOy1mqK8WPvf5NVp2YVMVLLfP1x3vGUVICydnPhrjBxeCyjOYkWb2CKfGRkG5YXyvAtRMU1EFdQcp/4zdo7fmzEPeFkMeUcEp0X3h02bxhUyQT3fUVnBI38S2CfS3c9tT2plcPyoUyaSzXqQUzlhMTRwebrBs8JAgMBAAE=",
+        "Addresses": [
+                "/ip4/192.168.56.1/tcp/4001/ipfs/QmW9Y3rm6hUQ1W4KDmATaVQsJjqqWkZjAMWodqe1baDMvo",
+                "/ip4/169.254.107.247/tcp/4001/ipfs/QmW9Y3rm6hUQ1W4KDmATaVQsJjqqWkZjAMWodqe1baDMvo",
+                "/ip4/169.254.250.242/tcp/4001/ipfs/QmW9Y3rm6hUQ1W4KDmATaVQsJjqqWkZjAMWodqe1baDMvo",
+                "/ip4/169.254.48.179/tcp/4001/ipfs/QmW9Y3rm6hUQ1W4KDmATaVQsJjqqWkZjAMWodqe1baDMvo",
+                "/ip4/10.10.15.34/tcp/4001/ipfs/QmW9Y3rm6hUQ1W4KDmATaVQsJjqqWkZjAMWodqe1baDMvo",
+                "/ip4/127.0.0.1/tcp/4001/ipfs/QmW9Y3rm6hUQ1W4KDmATaVQsJjqqWkZjAMWodqe1baDMvo",
+                "/ip6/::1/tcp/4001/ipfs/QmW9Y3rm6hUQ1W4KDmATaVQsJjqqWkZjAMWodqe1baDMvo"
+        ],
+        "AgentVersion": "go-ipfs/0.4.18/",
+        "ProtocolVersion": "ipfs/0.1.0"
+}
+```
