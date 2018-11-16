@@ -48,6 +48,10 @@ https://www.v2ray.pro
 https://prc-word.com  
 https://icymind.com/learn-from-gfw  
 https://www.hurray0.com/menu/27/  
+https://doub.io/  
+https://congcong0806.github.io/2018/04/20/SS/  
+https://tool.ssrshare.us/tool/free_ssr  
+
 
 ## git (go get)
 git config --global http.proxy http://127.0.0.1:1080  
