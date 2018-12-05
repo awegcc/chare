@@ -39,8 +39,7 @@ HC5962 - 1.4.8.20462s    MAC : D4EE0755F0FE
 https://openwrt.io  
 https://www.binss.me/blog/install-openwrt-on-hiwifi-router/
 
-## SS
-www.jsss.pro  
+## SS  
 www.jsss-5.top  
 www.jsss.pro  
 www.jsss.tech  
