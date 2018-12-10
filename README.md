@@ -1,5 +1,6 @@
-## nodejs rpm packages repo
-https://rpm.nodesource.com/pub_8.x/el/7/x86_64/  
+## nodejs rpm/deb packages repo
+rpm.nodesource.com/pub_8.x/el/7/x86_64  
+deb.nodesource.com/node_8.x/pool/main/n/nodejs  
 
 
 ## Centos remove unused packages
