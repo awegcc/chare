@@ -24,5 +24,6 @@ bash proxy
 ```
 export http_proxy=http.proxy http://192.168.1.1:1080
 export https_proxy=http.proxy http://192.168.1.1:1080
+ALL_PROXY=socks5://127.0.0.1:8888 git clone https://github.com/some/one.git
 ```
 
