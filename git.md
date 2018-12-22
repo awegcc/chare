@@ -12,12 +12,12 @@ git config --global color.ui auto
 proxy
 ```
 git config --global http.proxy http://192.168.1.1:1080
-git config --global https.proxy http://192.168.1.1:1080
+git config --global http.https://golang.org.proxy socks5://127.0.0.1:1080
 ```
 or  
 ```
 git config --global http.proxy socks5://192.168.1.1:1080
-git config --global https.proxy socks5://192.168.1.1:1080
+git config --global http.proxy socks5h://192.168.1.1:1080
 ```
 
 bash proxy
