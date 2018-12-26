@@ -17,3 +17,7 @@ repo_gpgcheck=0
 enabled=1
 enabled_metadata=1
 ```
+
+#### shadowsocks
+https://www.itmangoto.cn/2018/06/15/shadowsocks-libev-local-redir-tunnel-server/  
+
