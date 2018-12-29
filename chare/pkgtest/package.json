@@ -1,0 +1,18 @@
+{
+  "name": "pkgtest",
+  "version": "1.0.0",
+  "description": "",
+  "bin": "index.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "cc",
+  "license": "ISC",
+  "dependencies": {
+    "leveldown": "^3.0.2",
+    "levelup": "^2.0.2",
+    "secp256k1": "^3.5.0"
+  },
+  "devDependencies": {}
+}
