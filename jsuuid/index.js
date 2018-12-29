@@ -30,6 +30,4 @@ si.networkInterfaces((info) => {
     console.log('networkInterfaces: ', info);
 });
 
-si.dockerAll((info) => {
-    console.log('dockerAll: ', info);
-});
+
