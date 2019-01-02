@@ -1,4 +1,5 @@
-### 1. Local Centos 7
+## info
+#### 1. Local Centos 7
 ```
 {
 	"ID": "QmPwLzgDHTuBBFyg329BgHQkDA1gsk2nd9PXaEghyo9RPY",
@@ -14,7 +15,7 @@
 	"ProtocolVersion": "ipfs/0.1.0"
 }
 ```
-### 2. Windows 10 WSL
+#### 2. Windows 10 WSL
 ```
 {
         "ID": "QmUAbGfHAEqSaaaEdQY8oYfPnNJpXgLVq7yPjZNP8TmsL5",
@@ -33,7 +34,7 @@
 }
 ```
 
-### 3. Windows 10
+#### 3. Windows 10
 ```
 {
         "ID": "QmW9Y3rm6hUQ1W4KDmATaVQsJjqqWkZjAMWodqe1baDMvo",
@@ -51,3 +52,4 @@
         "ProtocolVersion": "ipfs/0.1.0"
 }
 ```
+
