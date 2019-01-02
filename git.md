@@ -20,7 +20,7 @@ git config --global http.proxy socks5://192.168.1.1:1080
 git config --global http.proxy socks5h://192.168.1.1:1080
 ```
 
-bash proxy
+bash env proxy
 ```
 export http_proxy=http://192.168.1.1:1080
 export https_proxy=http://192.168.1.1:1080
