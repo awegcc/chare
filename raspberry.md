@@ -10,7 +10,7 @@ channel=6
 ssid=raspberry
 wpa=2
 wpa_key_mgmt=WPA-PSK
-wpa_passphrase=#1myshare
+wpa_passphrase=password
 rsn_pairwise=CCMP
 ```
 
@@ -26,6 +26,6 @@ channel=36
 ssid=raspberry
 wpa=2
 wpa_key_mgmt=WPA-PSK
-wpa_passphrase=#1myshare
+wpa_passphrase=password
 rsn_pairwise=CCMP
 ```
