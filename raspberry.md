@@ -29,3 +29,6 @@ wpa_key_mgmt=WPA-PSK
 wpa_passphrase=password
 rsn_pairwise=CCMP
 ```
+
+### lightdm config
+Just edit `/etc/lightdm/pi-greeter.conf`
