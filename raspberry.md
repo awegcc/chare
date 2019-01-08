@@ -1,5 +1,9 @@
 
 ### perf
+| raspberry pi 3b+ | hdparm cache | hdparm buffer |
+| :--------------- | :-----------:| ------------: |
+|  TF card         | 772.65 MB/s  | 21.78 MB/s    |
+| hard disk        | 806.99 MB/s  | 33.28 MB/s    |
 
 ### hostapd config
 #### 1. 2.4G #5G
