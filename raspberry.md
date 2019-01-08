@@ -27,5 +27,7 @@ wpa_passphrase=password
 rsn_pairwise=CCMP
 ```
 
-### lightdm config
-Just edit `/etc/lightdm/pi-greeter.conf`
+### raspbian config
+#### 1. lightdm config
+Just edit `/etc/lightdm/pi-greeter.conf` to remove raspberry logo  
+
