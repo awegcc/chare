@@ -41,7 +41,7 @@ https://openwrt.io
 https://www.binss.me/blog/install-openwrt-on-hiwifi-router/
 
 ## SS  
-www.jsss-5.top  
+www.jsss-9.top  
 www.jsss.pro  
 www.jsss.tech  
 https://free-ss.tk  
