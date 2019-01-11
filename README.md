@@ -1,6 +1,7 @@
 ## nodejs rpm/deb packages repo
 https://rpm.nodesource.com/pub_8.x/el/7/x86_64  
 https://deb.nodesource.com/node_8.x/pool/main/n/nodejs  
+echo 'registry=https://registry.npm.taobao.org' > ~/.npmrc
 
 
 ## Centos remove unused packages
