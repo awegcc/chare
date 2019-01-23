@@ -28,6 +28,16 @@ rsn_pairwise=CCMP
 ```
 
 ### raspbian config
+#### 0. Remove boot raspberry logo
+Edit `/boot/cmd.line`
+```
+```
 #### 1. lightdm config
 Just edit `/etc/lightdm/pi-greeter.conf` to remove raspberry logo  
+#### 2. apt update got hash mismatch
+Edit `/etc/apt.d/source.list`
+```
+```
+Run
+`wget | apt add `
 
