@@ -13,7 +13,10 @@
 | **5G**           |     2.5 MB/s    |          MB/s    |     MB/s     |    MB/s   |
 
 ### hostapd config
-#### 1. 2.4G #5G
+#### 0. Install hostapd
+`apt install hostapd`
+#### 1. Configuration 2.4G #5G
+Edit `/etc/hostapd/config`
 ```
 interface=wlan0
 driver=nl80211
