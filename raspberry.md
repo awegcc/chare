@@ -43,7 +43,21 @@ Just edit `/etc/lightdm/pi-greeter.conf` to remove raspberry logo
 #### 2. apt update got hash mismatch
 Edit `/etc/apt.d/source.list`
 ```
+sudo apt-get clean
+sudo rm /var/lib/apt/lists/partial/*
+sudo nano /etc/apt/sources.list
+delete everything and add the following lines to your sources.list file...........
+Code: Select all
+
+deb http://archive.raspbian.org/raspbian wheezy main contrib non-free
+deb-src http://archive.raspbian.org/raspbian wheezy main contrib non-free
+use this command for public key.............
+Code: Select all
+
+wget http://archive.raspbian.org/raspbian.public.key -O - | sudo apt-key add -
+Then do ..............
+Code: Select all
+
+sudo apt-get update
 ```
-Run
-`wget | apt add `
 
