@@ -32,8 +32,11 @@ rsn_pairwise=CCMP
 
 ### raspbian config
 #### 0. Remove boot raspberry logo
-Edit `/boot/cmd.line`
+Add `logo.nologo` to `/boot/cmdline.txt`
+#### 1. Rename default username
 ```
+usermod -l mshare -d /home/mshare -m pi
+groupmod -n mshare pi
 ```
 #### 1. lightdm config
 Just edit `/etc/lightdm/pi-greeter.conf` to remove raspberry logo  
