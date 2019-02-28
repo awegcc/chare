@@ -13,6 +13,12 @@ yum remove empathy cheese gnome-dictionary gnome-contacts\
     system-config-printer-udev system-config-printer-libs gutenprint firewalld 
 ```
 
+## virsh console Centos7
+```
+systemctl enable serial-getty@ttyS0.service
+systemctl start serial-getty@ttyS0.service
+```
+
 ## Centos install teamviewer
 ```
 rpm -i teamviewer_13.1.8286.x86_64.rpm
