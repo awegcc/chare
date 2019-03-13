@@ -71,3 +71,11 @@ http://openwrt-dist.sourceforge.net
 https://cokebar.info/archives/962  
 http://mike163.coding.me/2015/08/12/openwrt-shadowsocks-chinadns-setup/  
 
+## sockst  
+www.live-socks.net  
+spys.one/en/socks-proxy-list  
+https://sockslist.net  
+https://www.socks-proxy.net  
+https://proxyscrape.com/en/free-proxy-list  
+
+ 
