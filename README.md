@@ -14,6 +14,13 @@ yum remove empathy cheese gnome-dictionary gnome-contacts\
 ```
 
 ## virsh console Centos7
+OS installation  
+```
+virt-install –name centos7 –ram 1024 –disk path=/centos7.qcow2\
+  –location /CentOS-7-x86_64-DVD-1708.iso –nographics\
+  –accelerate –extra-args=”console=ttyS0″ –network bridge=virbr0
+```
+OS setting
 ```
 systemctl enable serial-getty@ttyS0.service
 systemctl start serial-getty@ttyS0.service
