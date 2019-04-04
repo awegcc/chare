@@ -26,6 +26,14 @@ systemctl enable serial-getty@ttyS0.service
 systemctl start serial-getty@ttyS0.service
 ```
 
+## VS Code config
+```
+cat .vscode/settings.json
+{
+    "go.inferGopath": true
+}
+```
+
 ## Centos install teamviewer
 ```
 rpm -i teamviewer_13.1.8286.x86_64.rpm
