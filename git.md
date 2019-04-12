@@ -2,6 +2,7 @@
 ## git config
 base  
 ```
+git config --global core.editor vi
 git config --global alias.st status
 git config --global alias.co checkout
 git config --global credential.helper cache
