@@ -11,3 +11,7 @@ curl -H 'Origin: http://a.cn' \
 ```
 curl -H 'Origin: http://a.cn' -v http://127.0.0.1
 ```
+
+## CORS test website
+https://www.test-cors.org/
+
