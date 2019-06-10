@@ -19,6 +19,4 @@ rs.on('data', (chunk) => {
 rs.end();
 ```
 
-## others
-1. EOL  
-2. EOL2  
+# MMMMM
