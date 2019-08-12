@@ -93,4 +93,13 @@ https://sockslist.net
 https://www.socks-proxy.net  
 https://proxyscrape.com/en/free-proxy-list  
 
- 
+## github
+```
+LGTM: Looks Good To Me.
+SGTM: Sounds Good To Me.
+WIP: Work In Progress. 
+PTAL: Please Take A Look.
+TBR: To Be Reviewed. 
+TL;DR: Too Long; Didn't Read. 
+TBD: To Be Done(or Defined/Discussed/Decided/Determined). 
+```
