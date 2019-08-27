@@ -31,5 +31,5 @@ export ALL_PROXY=socks5h://172.16.3.235:1888
 go get  
 ```
 https_proxy=http://10.10.15.34:1080 go get -u golang.org/x/text
-GOPROXY=10.10.15.34:1080 go build
+GOPROXY=https://goproxy.io go build
 ```
