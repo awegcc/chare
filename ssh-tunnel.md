@@ -1,8 +1,8 @@
 ### 1. Client Config
-- copy ssh-key to server
+- copy ssh-key to server  
 `ssh-copy-id root@serverip`
 
-- autossh config
+- autossh config  
 install
 `yum install autossh`
 
@@ -37,8 +37,8 @@ EOF
 ```
 
 ### 2. Server Config
-- Install sshpass
+- Install sshpass  
 `yum install sshpass`
 
-- ssh client
+- ssh client  
 `sshpass -p clientpass ssh -p 20022 root@localhost`
