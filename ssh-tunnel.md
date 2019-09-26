@@ -37,6 +37,10 @@ EOF
 ```
 
 ### 2. Server Config
+- ssh config(optional)
+```
+GatewayPorts yes
+```
 - Install sshpass  
 `yum install sshpass`
 
