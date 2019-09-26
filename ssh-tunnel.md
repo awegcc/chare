@@ -1,3 +1,5 @@
+https://www.centos.bz/2017/08/ssh-reverse-proxy  
+
 ### 1. Client Config
 - copy ssh-key to server  
 `ssh-copy-id root@serverip`
