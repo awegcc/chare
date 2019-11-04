@@ -15,7 +15,7 @@ RUN yum install epel-release -y && yum install wget make yasm -y && \
 
 FROM nvidia/cuda:10.0-runtime-centos7
 
-RUN yum update -y
+RUN yum update -y && yun clean all
 
 WORKDIR /tmp
 VOLUME  /tmp
