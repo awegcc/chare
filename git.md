@@ -11,6 +11,12 @@ git config --global color.ui auto
 git config --global core.editor vi
 ```
 
+reset local branch to remote
+```
+git fetch origin
+git reset --hard origin/master
+```
+
 proxy
 ```
 git config --global http.proxy http://192.168.1.1:1080
