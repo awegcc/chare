@@ -1,29 +1,18 @@
-### ffmpeg cuda docker
-```
-FROM nvidia/cuda:10.0-devel-centos7 AS devel
+## Video
+- Thumbnail
+`ffmpeg -hide_banner -ss 00:01:50.420 -i in.mp4 -s 640x480 -vframes 1 out.jpg`
 
-WORKDIR /root
+ffmpeg -hide_banner -ss 01:02:35 -i mm-190826.mp4 -vframes 1 out2.jpg
 
-RUN yum install epel-release -y && yum install wget make yasm -y && \
-    wget https://github.com/FFmpeg/nv-codec-headers/archive/n9.0.18.2.tar.gz && \
-    tar -xzf n9.0.18.2.tar.gz && cd nv-codec-headers-n9.0.18.2 && make install && cd - && \
-    wget https://www.ffmpeg.org/releases/ffmpeg-4.2.1.tar.xz && \
-    tar -xJf ffmpeg-4.2.1.tar.xz && cd ffmpeg-4.2.1 && \
-    PKG_CONFIG_PATH='/usr/local/lib/pkgconfig' ./configure --enable-cuda-nvcc --enable-cuvid --enable-nvenc --enable-nonfree --enable-libnpp --extra-cflags=-I/usr/local/cuda/include --extra-ldflags=-L/usr/local/cuda/lib64 && \
-    make -j 20 && make install && \
-    
 
-FROM nvidia/cuda:10.0-runtime-centos7
+- trim and crop(crop=width:height:x:y)
+`ffmpeg -ss 00:01:51 -t 04:57:15 -accurate_seek -i 190815.mp4 -codec copy -avoid_negative_ts 1 out.mp4`
 
-RUN yum update -y && yun clean all
+ffmpeg -hwaccel cuda -ss 00:01:51 -t 04:57:15 -i 190815.mp4 -vf crop=410:710:438:10 -c:v h264_nvenc znm-02.mp4
 
-WORKDIR /tmp
-VOLUME  /tmp
-ENV  NVIDIA_VISIBLE_DEVICES=all NVIDIA_DRIVER_CAPABILITIES=compute,utility,video
+ffmpeg -hwaccel cuda -ss 00:01:51 -t 01:00:40 -i 190826.mp4 -vf crop=410:720:435:00 -c:v h264_nvenc mmm-02.mp4
 
-COPY --from=devel /usr/local/bin/ffmpeg /usr/local/bin/ffprobe /usr/local/bin/
 
-CMD ["ffmpeg"]
-```
+## Image
 
-docker run -ti --gpus all --rm --name bs -e NVIDIA_VISIBLE_DEVICES=all -e NVIDIA_DRIVER_CAPABILITIES=compute,utility,video nvidia/cuda:10.1-runtime bash
+
