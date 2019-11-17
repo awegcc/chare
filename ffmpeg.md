@@ -12,6 +12,10 @@ ffmpeg -hwaccel cuda -ss 00:01:51 -t 04:57:15 -i 190815.mp4 -vf crop=410:710:438
 
 ffmpeg -hwaccel cuda -ss 00:01:51 -t 01:00:40 -i 190826.mp4 -vf crop=410:720:435:00 -c:v h264_nvenc mmm-02.mp4
 
+- watermark(delogo=x:y:w:h)
+ffplay -i test.flv -vf delogo=x=806:y=20:w=70:h=80:show=1
+ffmpeg -i test.flv -vf delogo=x=806:y=20:w=70:h=80 output.flv
+
 
 ## Image
 
