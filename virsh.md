@@ -1,3 +1,5 @@
+- install os
+```
 virt-install \
  --name centos5.9 \
  --ram 1024 \
@@ -24,3 +26,5 @@ virt-install \
  --console pty,target_type=serial \
  --location /home/CentOS-5.9-x86_64-bin-DVD-1of2.iso \
  --extra-args 'console=ttyS0,115200n8 serial'
+ ```
+ 
