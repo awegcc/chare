@@ -49,7 +49,7 @@ systemctl start autossh
 systemctl enable autossh
 ```
 
-### ClientB Access ClientA
+### 2. ClientB Access ClientA
 - Install sshpass  
 ```sh
 ssh -p 20022 root@serverip
