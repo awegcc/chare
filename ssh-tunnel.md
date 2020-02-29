@@ -19,7 +19,7 @@ EOF
 ```
 systemd service
 ```
-cat<<EOF>/etc/systemd/system/autossh.service  
+cat > /etc/systemd/system/autossh.service << EOF
 [Unit]
 Description=autossh
 Wants=network-online.target
@@ -29,7 +29,7 @@ After=network-online.target
 Type=simple
 #User=autossh
 EnvironmentFile=/etc/default/autossh
-ExecStart=/usr/bin/autossh -NR 20022:localhost:22 root@serverip -i /root/.ssh/id_rsa
+ExecStart=/usr/bin/autossh -i /root/.ssh/id_rsa -CqNR 0.0.0.0:20022:localhost:22 root@serverip
 Restart=always
 RestartSec=60
 
@@ -39,12 +39,18 @@ EOF
 ```
 
 ### 2. Server Config
-- ssh config(optional)
+- ssh config
 ```
+AllowAgentForwarding yes
+AllowTcpForwarding yes
 GatewayPorts yes
+X11Forwarding yes
+X11DisplayOffset 10
+X11UseLocalhost no
 ```
 - Install sshpass  
 `yum install sshpass`
 
 - ssh client  
-`sshpass -p clientpass ssh -p 20022 root@localhost`
+`sshpass -p clientpass ssh -p 20022 root@serverip`
+
