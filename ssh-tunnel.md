@@ -1,25 +1,33 @@
 https://www.centos.bz/2017/08/ssh-reverse-proxy  
+### 0. ssh server config
+- config sshd `/etc/ssh/sshd_config`
+```
+AllowAgentForwarding yes
+AllowTcpForwarding yes
+GatewayPorts yes
+X11Forwarding yes
+X11DisplayOffset 10
+X11UseLocalhost no
+```
+- restart sshd  
+`systemctl restart sshd`
 
-### 1. Client Config
+### 1. ClientA Config
 - copy ssh-key to server  
 `ssh-copy-id root@serverip`
 
-- autossh config  
-install
-`yum install autossh`
+- autossh configuration  
+```sh
+yum install autossh
 
-config
-```
-cat<<EOF>/etc/default/autossh  
+cat > /etc/default/autossh <<EOF
 AUTOSSH_POLL=60
 AUTOSSH_FIRST_POLL=30
 AUTOSSH_GATETIME=0
 AUTOSSH_PORT=23456
 EOF
-```
-systemd service
-```
-cat > /etc/systemd/system/autossh.service << EOF
+
+cat > /etc/systemd/system/autossh.service <<EOF
 [Unit]
 Description=autossh
 Wants=network-online.target
@@ -36,21 +44,17 @@ RestartSec=60
 [Install]
 WantedBy=multi-user.target
 EOF
+
+systemctl start autossh
+systemctl enable autossh
 ```
 
-### 2. Server Config
-- ssh config
-```
-AllowAgentForwarding yes
-AllowTcpForwarding yes
-GatewayPorts yes
-X11Forwarding yes
-X11DisplayOffset 10
-X11UseLocalhost no
-```
+### ClientB Access ClientA
 - Install sshpass  
-`yum install sshpass`
+```sh
+ssh -p 20022 root@serverip
 
-- ssh client  
-`sshpass -p clientpass ssh -p 20022 root@serverip`
+# or use sshpass
+sshpass -p clientpass ssh -p 20022 root@serverip
+```
 
