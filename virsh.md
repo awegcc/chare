@@ -28,3 +28,13 @@ virt-install \
  --extra-args 'console=ttyS0,115200n8 serial'
  ```
  
+- snapshot
+```
+# create
+virsh snapshort-create-as --domain ecs99 --name ecs99_snap01 --description 'new install @2020-02-03'
+# list
+virsh snapshot-list ecs99_snap01
+virsh snapshot-info --domain ecs99 --snapshotname ecs99_snap01
+# revert
+virsh snapshot-revert ecs99 ecs99_snap01
+```
