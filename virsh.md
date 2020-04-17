@@ -38,3 +38,5 @@ virsh snapshot-info --domain ecs99 --snapshotname ecs99_snap01
 # revert
 virsh snapshot-revert ecs99 ecs99_snap01
 ```
+
+https://raymii.org/s/articles/virt-install_introduction_and_copy_paste_distro_install_commands.html
