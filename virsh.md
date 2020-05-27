@@ -1,4 +1,4 @@
-- install os
+- install centos5
 ```
 virt-install \
  --name centos5.9 \
@@ -26,6 +26,23 @@ virt-install \
  --console pty,target_type=serial \
  --location /home/CentOS-5.9-x86_64-bin-DVD-1of2.iso \
  --extra-args 'console=ttyS0,115200n8 serial'
+ ```
+ 
+ - install centos8
+ ```
+ #--network bridge=virbr0
+virt-install \
+--name centos8 \
+--ram 4096 \
+--disk path=/mnt/sdc/centos8.qcow2 \
+--vcpus 2 \
+--os-type linux \
+--os-variant rhel8.0 \
+--network type=direct,source=em1,source_mode=bridge,model=virtio \
+--graphics none \
+--console pty,target_type=serial \
+--location /mnt/sdc/CentOS-8.1.1911-x86_64-dvd1.iso \
+--extra-args 'console=ttyS0,115200n8 serial'
  ```
  
 - snapshot
