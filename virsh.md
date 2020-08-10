@@ -28,6 +28,22 @@ virt-install \
  --extra-args 'console=ttyS0,115200n8 serial'
  ```
  
+ - install centos7
+ ```
+virt-install \
+--name ctos7 \
+--ram 1024 \
+--disk path=/mnt/sdd/ctos7.qcow2 \
+--vcpus 1 \
+--os-type linux \
+--os-variant rhel7.0 \
+--network bridge=virbr0 \
+--graphics none \
+--console pty,target_type=serial \
+--location  /mnt/sdb/CentOS-7-x86_64-Minimal-2003.iso \
+--extra-args 'console=ttyS0,115200n8 serial'
+ ```
+ 
  - install centos8
  ```
  #--network bridge=virbr0
