@@ -1,5 +1,5 @@
 
-### perf
+## perf
 #### 1. IO perf(hdparm read/ dd write)
 | raspberry pi 3b+ | hdparm(r) cache | hdparm(r) buffer | dd (w dsync) |    dd(w)  |
 | :--------------- | :--------------:| :---------------:|:------------:|:---------:|
@@ -55,3 +55,21 @@ wget http://archive.raspbian.org/raspbian.public.key -O - | sudo apt-key add -
 sudo apt-get update
 ```
 
+## Install 64bit Centos7
+  1. Download Image
+  `https://people.centos.org/pgreco/`
+  2. Write Image to sd-card
+  3. boot(root/centos)
+  4. Resize/Expand rootfs
+  ```
+  /usr/bin/rootfs-expand #由于还没有这个命令，需要通过fdisk 实现新分区
+  fdisk /dev/mmcblk0
+  新建分区 n /dev/mmcblk0p4
+  删除分区 d /dev/mmcblk0p3
+  在新建分区n /dev/mmcblk0p3
+  删除分区d /dev/mmcblk0p4
+  w
+  q
+  reboot
+  resize2fs /dev/mmcblk0p3
+  ```
