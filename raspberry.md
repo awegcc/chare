@@ -55,9 +55,13 @@ wget http://archive.raspbian.org/raspbian.public.key -O - | sudo apt-key add -
 sudo apt-get update
 ```
 
-## Install 64bit Centos7
-  1. Download Image
-  `https://people.centos.org/pgreco/`
+## Install 64bit Centos
+  1. Download Image  
+  ```
+  https://people.centos.org/pgreco/
+  or
+  https://mirrors.huaweicloud.com/centos-altarch/
+  ```
   2. Write Image to sd-card
   3. boot(root/centos)
   4. Resize/Expand rootfs
