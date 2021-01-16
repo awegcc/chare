@@ -2,6 +2,7 @@
 https://rpm.nodesource.com/pub_8.x/el/7/x86_64  
 https://rpm.nodesource.com/pub_10.x/el/8/x86_64  
 https://deb.nodesource.com/node_8.x/pool/main/n/nodejs  
+https://deb.nodesource.com/node_10.x/pool/main/n/nodejs  
 echo 'registry=https://registry.npm.taobao.org' > ~/.npmrc
 
 
