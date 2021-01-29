@@ -57,11 +57,10 @@ sudo apt-get update
 
 ## Install 64bit Centos
   1. Download Image  
-  ```
-  https://people.centos.org/pgreco/
-  or
-  https://mirrors.huaweicloud.com/centos-altarch/
-  ```
+  https://people.centos.org/pgreco/  
+  https://mirrors.huaweicloud.com/centos-altarch/  
+  http://isoredirect.centos.org/altarch/7/isos/aarch64/  
+  
   2. Write Image to sd-card
   3. boot(root/centos)
   4. Resize/Expand rootfs
