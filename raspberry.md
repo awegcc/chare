@@ -67,9 +67,9 @@ sudo apt-get update
   ```
   /usr/bin/rootfs-expand #由于还没有这个命令，需要通过fdisk 实现新分区
   fdisk /dev/mmcblk0
-  新建分区 n /dev/mmcblk0p4
-  删除分区 d /dev/mmcblk0p3
-  在新建分区n /dev/mmcblk0p3
+  新建分区n /dev/mmcblk0p4
+  删除分区d /dev/mmcblk0p3
+  新建分区n /dev/mmcblk0p3
   删除分区d /dev/mmcblk0p4
   w
   q
