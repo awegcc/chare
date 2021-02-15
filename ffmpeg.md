@@ -20,10 +20,16 @@ ffplay -i znm-190815.mp4 -vf delogo=7:570:186:130:show=1
 ffmpeg -i znm-190815.mp4 -vf delogo=7:570:186:130 output.mp3
 ```
 
-- video to gif  
-https://github.com/cyburgee/ffmpeg-guide
-
-
+- video to gif(https://github.com/cyburgee/ffmpeg-guide)
+笨方式:  
+```
+ffmpeg -i cat.mp4 -ss 00:00:02 -t 5 -vf scale=480:-2 cat480.mp4 cat0.mp4
+ffmpeg -i cat0.mp4 -r 12 -filter_complex 'drawtext=x=(main_w-text_w)/2:y=main_h-text_h-40:fontfile=assets/msyh.ttc:fontsize=h*0.09:fontcolor=red:text=中' cat01.gif
+```
+好方式:
+```
+ffmpeg -ss 00:00:02 -t 5 -i cat.mp4 -filter_complex "[0:v] fps=12,scale=w=480:h=-2,drawtext=x=(main_w-text_w)/2:y=main_h-text_h-40:fontfile=assets/msyh.ttc:fontsize=h*0.09:fontcolor=red:text=中" cat03.gif
+```
 
 ## Image
 
